@@ -11,6 +11,7 @@ function draw() {
   let vermClaro = color(255, 85, 55);
   let corNova = lerpColor(vermEsc, vermClaro, amt);
 
+  noStroke()
   fill(corNova)
   quad(0, 0, 365, 0, 365, 278, 0, 278)
 
@@ -20,6 +21,7 @@ function draw() {
   fill(10,35,92)
   quad(365, 705, 613, 705, 613, 470, 365, 470)
 
+  stroke(0)
   strokeWeight(10);
   line(365, 0, 365, height);
 
